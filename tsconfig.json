@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target":"es5",
+        "module":"amd",
+        "outFile": "Activity.js",// This is for single file output
+        "outDir": "./deploy/output",
+        "experimentalDecorators":true,
+        "emitDecoratorMetadata": true
+    },
+    "include": [
+        "app/scripts/**/*"
+    ]
+}

@@ -1,0 +1,24 @@
+<html>
+    <head><title>Activity</title>
+        <script src="vendors/jquery/jquery.js"></script>
+        <script src="vendors/jqueryui/jquery-ui.js"></script>
+    </head>
+    <link rel="stylesheet" href="style/index.css">
+<body>
+    <div id="activityContainer"></div>
+</body>
+<script src="vendors/requirejs/require.js"></script>
+<script>
+    requirejs.config({
+        baseUrl:'output/',
+        paths: {
+            vendors:'vendors',
+            lodash:"../vendors/lodash/lodash",
+            jquery:"../vendors/jquery/jquery",
+            jqueryui:"../vendors/jqueryui/jquery-ui",
+        }
+    })
+    //startup file
+    requirejs(["Activity"]);
+</script>
+</html>
